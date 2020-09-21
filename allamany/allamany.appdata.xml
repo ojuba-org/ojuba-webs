@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">allamany.desktop</id>
+  <licence>WAQF</licence>
+  <summary>Prophet Mohammad -peace be upon him- teach me</summary>
+  <summary xml:lang="ar">علمني رسول الله صلى الله عليه وسلم</summary>
+  <description>
+    <p>Prophet Mohammad -peace be upon him- teach me.</p>
+    <p xml:lang="ar">علمني رسول الله صلى الله عليه وسلم.</p>
+  </description>
+  <url type="homepage">http://linuxac.org</url>
+  <screenshots>
+    <screenshot type="default">http://ojuba.org/screenshots/qareeb.png</screenshot>
+  </screenshots>
+  <updatecontact>mjtahd@gmail.com</updatecontact>
+  <project_group>Education</project_group>
+</application>

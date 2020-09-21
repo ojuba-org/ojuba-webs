@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+## OJUBA WEBS
+
+
+## Imports
+import gi
+gi.require_version('Gtk','3.0')
+gi.require_version('WebKit2','4.0')
+from gi.repository import Gtk,WebKit2
+
+## Window Attribute
+Window=Gtk.Window()
+Window.set_title("Test of Python GTK and WebKit")
+Window.set_default_size(1160,720)
+Window.set_position(Gtk.WindowPosition.CENTER)
+Window.set_resizable(0)
+Window.set_icon_from_file("/usr/share/pixmaps/allamany.png")
+Window.set_title("علمني رسول الله صلى الله عليه وسلم")
+
+## Web Attribute
+WebBrowser=WebKit2.WebView()
+websettings = WebBrowser.get_settings()
+websettings.set_hardware_acceleration_policy(WebKit2.HardwareAccelerationPolicy.ALWAYS)
+websettings.set_allow_file_access_from_file_urls(True)
+websettings.set_enable_java(True)
+websettings.set_enable_plugins(True)
+websettings.set_enable_media_stream(True)
+websettings.set_enable_webaudio(True)
+websettings.set_property("enable-mediasource", True)
+WebBrowser.load_uri("file:///home/moceap/سطح المكتب/ojuba copr/allamany-1.1-1.mga6.src/allamany/index.html")
+#print(WebBrowser.get_inspector().read())
+
+
+## Run
+Window.add(WebBrowser)
+Window.connect("delete-event",Gtk.main_quit)
+Window.show_all()
+Gtk.main()
+

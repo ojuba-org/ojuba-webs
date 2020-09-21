@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Allamany
+Name[ar]=علمني 
+GenericName=Allamany
+GenericName[ar]=علمني
+Comment=Prophet Mohammad -peace be ubon him- teach me
+Comment[ar]=علمني رسول الله صلى الله عليه وسلم
+Terminal=false
+Exec=allamany
+Icon=allamany
+Categories=Education;X-Islamic-Software;
+StartupNotify=false
