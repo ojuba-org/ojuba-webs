@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+## OJUBA WEBS
+
+## Variables
+project = "arabic-writer"
+pTitle = "الكاتب العربي"
+pWidth = 1160
+pHeight = 720
+
+## Imports
+import gi
+gi.require_version('Gtk','3.0')
+gi.require_version('WebKit2','4.0')
+from gi.repository import Gtk,WebKit2
+
+## Window Attribute
+Window=Gtk.Window()
+Window.set_title("Test of Python GTK and WebKit")
+Window.set_default_size(pWidth, pHeight)
+Window.set_position(Gtk.WindowPosition.CENTER)
+Window.set_resizable(0)
+Window.set_icon_from_file("/usr/share/pixmaps/%s.png" % project)
+Window.set_title(pTitle)
+
+## Web Attribute
+WebBrowser=WebKit2.WebView()
+websettings = WebBrowser.get_settings()
+websettings.set_hardware_acceleration_policy(WebKit2.HardwareAccelerationPolicy.ALWAYS)
+websettings.set_allow_file_access_from_file_urls(True)
+websettings.set_enable_java(True)
+websettings.set_enable_plugins(True)
+websettings.set_enable_media_stream(True)
+websettings.set_enable_webaudio(True)
+websettings.set_property("enable-mediasource", True)
+WebBrowser.load_uri("file:///usr/share/%s/index.html" % project)
+
+
+## Run
+Window.add(WebBrowser)
+Window.connect("delete-event",Gtk.main_quit)
+Window.show_all()
+Gtk.main()

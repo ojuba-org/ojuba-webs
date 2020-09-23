@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Arabic Writer
+Name[ar]=الكاتب العربي 
+GenericName=Arabic Writer
+GenericName[ar]=الكاتب العربي
+Comment=Enables Arabic writing in programs that isn't support
+Comment[ar]=تمكين الكتابة بالعربية في البرامج غير الداعمة لها
+Terminal=false
+Exec=arabic-writer
+Icon=arabic-writer
+Categories=Office;
+StartupNotify=false

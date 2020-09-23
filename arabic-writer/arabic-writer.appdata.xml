@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">arabic-writer.desktop</id>
+  <licence>GPL</licence>
+  <summary>Arabic Writer</summary>
+  <summary xml:lang="ar">الكاتب العربي</summary>
+  <description>
+    <p>Enables Arabic writing in programs that isn't support.</p>
+    <p xml:lang="ar">تمكين الكتابة بالعربية في البرامج غير الداعمة لها.</p>
+  </description>
+  <url type="homepage">http://omar84.com</url>
+  <screenshots>
+    <screenshot type="default">http://ojuba.org/screenshots/arabic-writer.png</screenshot>
+  </screenshots>
+  <updatecontact>admin@omar84.com</updatecontact>
+  <project_group>Office</project_group>
+</application>
