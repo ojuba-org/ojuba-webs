@@ -1,5 +1,5 @@
 Name: allamany
-Version: 2.0
+Version: 2.1
 Release: 1%{?dist}
 Summary: Prophet Mohammad -peace be upon him- teach me
 Summary(ar): علمني رسول الله صلى الله عليه وسلم
@@ -47,9 +47,12 @@ install -Dp -m 0644 %{name}.png %{buildroot}%{_datadir}/pixmaps
 
 
 %changelog
+* Wed Sep 23 2020 Mosaab Alzoubi <moceap@hotmail.com> - 2.1-1
+- Fixes
+
 * Mon Sep 21 2020 Mosaab Alzoubi <moceap@hotmail.com> - 2.0-1
 - Use Webkit 2G
-- Use Python 3
+- Use Python3
 
 * Fri Sep 18 2020 Mosaab Alzoubi <moceap@hotmail.com> - 1.1-2
 - Rebuilt for F32
